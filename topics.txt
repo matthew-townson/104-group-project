@@ -1,0 +1,5 @@
+Things to talk about:
+Day distributions, what days are interesting
+Scatter plot - what places are popular in NY
+What bases are most used - does that mean anything
+Times - what times are most popular
