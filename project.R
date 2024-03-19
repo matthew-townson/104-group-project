@@ -21,3 +21,17 @@ View(nydata)
 # Plot graph
 # PLAN - plot this data as a scatter and overlay with a map
 plot(nydata$Lon, nydata$Lat, pch=19, col="black")
+
+# Plots ALL - shows all of the pickups across the state
+ggplot(nydata, aes(x=Lon, y=Lat) ) +
+    geom_bin2d(bins=10000) +
+    scale_fill_continuous(type = "viridis")
+    theme_bw()
+ggsave("./exported/full.png", width = 16, height = 9, device="png", dpi=1600)
+
+# Plots only NYC area
+ggplot(nydata, aes(x=Lon, y=Lat) ) +
+    geom_bin2d(bins=10000) +
+    scale_fill_continuous(type = "viridis")
+    theme_bw()
+ggsave("./exported/full.png", width = 16, height = 9, device="png", dpi=1600)
