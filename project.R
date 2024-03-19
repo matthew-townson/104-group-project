@@ -20,3 +20,4 @@ View(nydata)
 
 # Plot graph
 # PLAN - plot this data as a scatter and overlay with a map
+plot(nydata$Lon, nydata$Lat, pch=19, col="black")
